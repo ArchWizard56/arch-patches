@@ -18,13 +18,3 @@ diff -ura dmenu-4.8.orig/config.h dmenu-4.8.new/config.h
  	[SchemeOut] = { "#000000", "#00ffff" },
  };
  /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-diff -ura dmenu-4.8.orig/config.mk dmenu-4.8.new/config.mk
---- dmenu-4.8.orig/config.mk	2018-03-14 12:26:40.000000000 -0700
-+++ dmenu-4.8.new/config.mk	2018-04-08 09:10:04.569184967 -0700
-@@ -29,3 +29,6 @@
- 
- # compiler and linker
- CC = cc
-+CPPFLAGS+=-D_FORTIFY_SOURCE=2
-+CFLAGS+=-march=x86-64 -mtune=generic -O2 -pipe -fstack-protector-strong -fno-plt
-+LDFLAGS+=-Wl,-O1,--sort-common,--as-needed,-z,relro,-z,now
