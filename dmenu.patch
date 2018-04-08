@@ -1,6 +1,6 @@
-diff -ura dmenu-4.8.orig/config.h dmenu-4.8.new/config.h
---- dmenu-4.8.orig/config.h	2018-04-08 09:19:33.981174770 -0700
-+++ dmenu-4.8.new/config.h	2018-04-08 09:16:16.569178306 -0700
+diff -ura dmenu-4.8.orig/config.def.h dmenu-4.8.new/config.def.h
+--- dmenu-4.8.orig/config.def.h	2018-04-08 09:19:33.981174770 -0700
++++ dmenu-4.8.new/config.def.h	2018-04-08 09:16:16.569178306 -0700
 @@ -4,13 +4,13 @@
  static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
  /* -fn option overrides fonts[0]; default X11 font or font set */
